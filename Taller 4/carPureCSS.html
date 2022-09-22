@@ -1,0 +1,144 @@
+<html xmlns="http://www.uis.edu.co" lang="es" xml:lang="es">
+<he ad>
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" 
+integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" 
+crossorigin="anonymous">
+
+<title>Complete los Siguientes Datos</title>
+</head>
+
+<style>
+    body {background-color: rgb(172, 126, 179);}
+    h1   {color: blue;}
+</style>
+
+<body>
+    
+    <h3 style="margin-left: 30;">
+    <br/>Llene el siguiente formulario<br/>  
+    </h3>
+
+    <p style="margin-left: 30;">
+    <br/>Las casillas marcadas con un * son requeridas.<br/>
+    </p>
+
+    <form class="pure-form pure-form-aligned">
+        <fieldset>
+            <div class="pure-control-group">
+                <label for="id_pais">Pa&iacute;s</label>
+                <select id="id_pais">
+                    <option>Colombia</option>
+                    <option>Estados Unidos</option>
+                    <option>Chile</option>
+                </select>
+            </div>
+            <div class="pure-control-group">
+                <label for="id_movidoa">Combustible</label>
+                <select id="id_movidoa">
+                    <option>Gasolina</option>
+                    <option>Diesel</option>
+                    <option>Electrico</option>
+                </select>
+            </div>
+            <div class="pure-control-group">
+                <label for="id_tipocoche">Tipo</label>
+                <select id="id_tipocoche">
+                    <option>Sedan</option>
+                    <option>Deporte</option>
+                    <option>Camioneta</option>
+                </select>
+            </div>
+            <div class="pure-control-group">
+                <label for="id_estado">Estado</label>
+                <select id="id_estado">
+                    <option>Perfecto</option>
+                    <option>Usado</option>
+                    <option>Critico</option>
+                </select>
+            </div>
+            <div class="pure-control-group">
+                <label for="id_marca">Marca</label>
+                <select id="id_marca">
+                    <option>Mazda</option>
+                    <option>Ford</option>
+                    <option>BMW</option>
+                </select>
+            </div>
+            <div class="pure-control-group">
+                <label for="id_user">Cedula</label>
+                <input type="number" id="id_user" placeholder="Cedula" maxlength="11" required=""/>
+                <span class="pure-form-message-inline">*</span>
+            </div>
+            <div class="pure-control-group">
+                <label for="modelo">Modelo</label>
+                <input type="text" id="modelo" placeholder="Modelo" maxlength="60" required=""/>
+                <span class="pure-form-message-inline">*</span>
+            </div>
+            <div class="pure-control-group">
+                <label for="anio">A&ntilde;o</label>
+                <input type="text" id="anio" placeholder="A&ntilde;o" maxlength="4" required=""/>
+                <span class="pure-form-message-inline">*</span>
+            </div>
+            <div class="pure-control-group">
+                <label for="detalle">Detalle</label>
+                <input type="text" id="detalle" placeholder="Detalle" required=""/>
+                <span class="pure-form-message-inline">*</span>
+            </div>
+            <div class="pure-control-group">
+                <label for="caja">Caja</label>
+                <input type="number" id="caja" placeholder="Caja" required=""/>
+                <span class="pure-form-message-inline">*</span>
+            </div>
+            <div class="pure-control-group">
+                <label for="motor">Motor</label>
+                <input type="number" id="motor" placeholder="Motor" required="" step="0.01" min="0" max="10"/>
+                <span class="pure-form-message-inline">*</span>
+            </div>
+            <div class="pure-control-group">
+                <label for="fechapub">Fecha Publicacion</label>
+                <input type="date" id="fechapub" placeholder="Fecha Publicacion" required=""/>
+                <span class="pure-form-message-inline">*</span>
+            </div>
+            <div class="pure-control-group">
+                <label for="precio">Precio</label>
+                <input type="number" id="precio" placeholder="Precio" maxlength="10" required=""/>
+                <span class="pure-form-message-inline">*</span>
+            </div>
+            <div class="pure-control-group">
+                <label for="moneda">Moneda</label>
+                <input type="text" id="moneda" placeholder="Moneda" maxlength="3" required=""/>
+                <span class="pure-form-message-inline">*</span>
+            </div>
+            <div class="pure-control-group">
+                <label for="cc_pic01">Descripcion 1</label>
+                <textarea id="cc_pic01" rows="5" cols="70" placeholder="Requerida" maxlength="85" required=""></textarea>
+                <span class="pure-form-message-inline">*</span>
+            </div>
+            <div class="pure-control-group">
+                <label for="cc_pic02">Descripcion 2</label>
+                <textarea id="cc_pic02" rows="5" cols="70" placeholder="Opcional" maxlength="85"></textarea>
+                <span class="pure-form-message-inline"></span>
+            </div>
+            <div textarea class="pure-control-group">
+                <label for="cc_pic03">Descripcion 3</label>
+                <textarea id="cc_pic03" rows="5" cols="70" placeholder="Opcional" maxlength="85"></textarea>
+                <span class="pure-form-message-inline"></span>
+            </div>
+            <div class="pure-control-group">
+                <label for="cc_destac">Destacado</label>
+                <input type="text" id="cc_destac" placeholder="Destacado" maxlength="2"/>
+                <span class="pure-form-message-inline"></span>
+            </div>
+            <div class="pure-controls">
+                <label for="aligned-cb" class="pure-checkbox">
+                    <input type="checkbox" id="aligned-cb" /> He leido los terminos y condiciones
+                </label>
+                <button type="submit" class="pure-button pure-button-primary">Submit</button>
+            </div>
+        </fieldset>
+    </form>    
+
+
+</body>
+</html>
